@@ -1,0 +1,23 @@
+{
+  "name": "sunceriedayedotcom",
+  "version": "1.0.0",
+  "description": "Suncerie Daye's portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SunnyDaye/sunceriedayedotcom.git"
+  },
+  "author": "Suncerie Daye",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SunnyDaye/sunceriedayedotcom/issues"
+  },
+  "homepage": "https://github.com/SunnyDaye/sunceriedayedotcom#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
