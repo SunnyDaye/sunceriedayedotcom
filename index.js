@@ -4,8 +4,10 @@ require('dotenv').config();
 
 const { PORT } = process.env;
 
+ app.use(express.static('webpage'));
+
  app.get('/', (req,res) => {
-    res.send('Hello World!');
+    res.send('index');
  });
 
  app.listen(PORT, () => {
