@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+:root {
+    --bg-color: #050205;
+    --card-color: #231A2A;
+    --primary-font-color: #EDDBF6;
+    --secondary-font-color: #6A5773;
+    --icon-color: #947B9E;
+    --active-color: #D164C5;
+    
+}
+
+body {
+    background-color: var(--bg-color);
+    
+}
+
+.container {
+    max-width: 1366px;
+}
+
+.card {
+    background-color: var(--card-color);
+    color: var(--primary-font-color) !important;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.side-panel {
+    height: 1400px;
+}
+
+.page {
+    height:600px;
+    margin-bottom: 15px;
+}
