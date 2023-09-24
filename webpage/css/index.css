@@ -1,36 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 :root {
-    --bg-color: #050205;
-    --card-color: #231A2A;
-    --primary-font-color: #EDDBF6;
-    --secondary-font-color: #6A5773;
-    --icon-color: #947B9E;
-    --active-color: #D164C5;
+    --bg-color: #70c1b3;
+    --card-color: #1d262d;
+    --primary-font-color: #fff;
+    --icon-color: #f25f5c;
+    --active-color: #7067cf;
     
 }
 
 body {
     background-color: var(--bg-color);
-    
+    color: var(--primary-font-color) !important;
+    font-family: 'Electrolize', sans-serif;
+    font-size: calc(8px + 0.4vw);
 }
-
+h1 {
+    font-size: calc(8px + 0.6vw);
+}
 .container {
     max-width: 1366px;
+    padding: 25px;
 }
 
 .card {
     background-color: var(--card-color);
-    color: var(--primary-font-color) !important;
-    font-family: 'Electrolize', sans-serif;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    box-shadow: 10px 10px #ffe066;
+    border-radius: 0;
 }
 
 .side-panel {
-    height: 1900px;
+    min-height: fit-content;
 }
 
+.side-panel .card-body div {
+    margin-bottom: 0.5vh;
+}
 
 .page {
-    height:600px;
-    margin-bottom: 15px;
+    height:45vh;
+    margin-bottom: 25px;
 }
+
+i {
+    color: var(--icon-color);
+}
+
+
+@media ((min-width: 370px) and (max-width: 576px)) {
+    /* … */
+    .card {
+        font-size: calc(9px + 0.4vw);;
+    }
+
+    h1{
+        font-size: calc(13px + 0.4vw);
+    }
+    .side-panel {
+       height: 350px;
+       flex-direction: row;
+       margin-bottom: 25px;
+    }
+
+    .side-panel img {
+        width: 35vw;
+        min-width: 200px;
+    }
+    .page {
+        height:500px;
+        
+    }
+
+    
+  }
+  
+  @media (max-width: 369px) {
+    /* … */
+    .card {
+        font-size: calc(10px + 0.4vw);;
+    }
+
+    h1{
+        font-size: calc(13px + 0.4vw);
+    }
+    .side-panel {
+       margin-bottom: 25px;
+
+    }
+    hr {
+        display: none;
+    }
+    .page {
+        height:550px;
+        
+    }
+
+    
+  }
