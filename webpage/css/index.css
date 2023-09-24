@@ -18,6 +18,10 @@ body {
 h1 {
     font-size: calc(20px + 0.6vw);
 }
+
+h2 {
+    font-size: calc(18px + 0.6vw);;
+}
 .container {
     max-width: 1366px;
     padding: 25px;
@@ -47,7 +51,7 @@ h1 {
 }
 
 .page {
-    height:45vh;
+    height:500px;
     margin-bottom: 25px;
     padding: 30px;
 }
@@ -56,6 +60,11 @@ i {
     color: var(--icon-color);
     line-height: normal !important;
     margin-right: 5px;
+}
+.previous {
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 .next {
     position: absolute;
@@ -69,6 +78,7 @@ a {
 a:hover {
     color: var(--active-color);
 }
+
 
 
 
@@ -97,7 +107,10 @@ a:hover {
         min-width: 365px;
     }
 
-    
+    lord-icon {
+        width:25px !important;
+        height: 25px !important;
+    }
   }
   
   @media (max-width: 414px) {
@@ -121,5 +134,9 @@ a:hover {
         
     }
 
+    lord-icon {
+        width:25px !important;
+        height: 25px !important;
+    }
     
   }
