@@ -39,6 +39,7 @@ h1 {
 
 .side-panel {
     min-height: fit-content;
+    
 }
 
 .side-panel .card-body div {
@@ -48,12 +49,18 @@ h1 {
 .page {
     height:45vh;
     margin-bottom: 25px;
+    padding: 30px;
 }
 
 i {
     color: var(--icon-color);
     line-height: normal !important;
     margin-right: 5px;
+}
+.next {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 a {
     color: var(--primary-font-color);
@@ -62,6 +69,7 @@ a {
 a:hover {
     color: var(--active-color);
 }
+
 
 
 @media ((min-width: 415px) and (max-width: 576px)) {
