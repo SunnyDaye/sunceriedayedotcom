@@ -6,17 +6,17 @@
     --primary-font-color: #fff;
     --icon-color: #f25f5c;
     --active-color: #7067cf;
-    
+    text-wrap: balance;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--primary-font-color) !important;
     font-family: 'Electrolize', sans-serif;
-    font-size: calc(8px + 0.4vw);
+    font-size: min(calc(16px + 0.4vw), 20px);
 }
 h1 {
-    font-size: calc(8px + 0.6vw);
+    font-size: calc(20px + 0.6vw);
 }
 .container {
     max-width: 1366px;
@@ -30,6 +30,11 @@ h1 {
     font-size: inherit;
     box-shadow: 10px 10px #ffe066;
     border-radius: 0;
+}
+
+.card-body div span {
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .side-panel {
@@ -47,20 +52,30 @@ h1 {
 
 i {
     color: var(--icon-color);
+    line-height: normal !important;
+    margin-right: 5px;
+}
+a {
+    color: var(--primary-font-color);
+}
+
+a:hover {
+    color: var(--active-color);
 }
 
 
-@media ((min-width: 370px) and (max-width: 576px)) {
+@media ((min-width: 415px) and (max-width: 576px)) {
     /* … */
     .card {
-        font-size: calc(9px + 0.4vw);;
+        font-size: calc(12px + 0.4vw);;
     }
 
     h1{
-        font-size: calc(13px + 0.4vw);
+        font-size: calc(16px + 0.4vw);
     }
     .side-panel {
        height: 350px;
+       min-width: 365px;
        flex-direction: row;
        margin-bottom: 25px;
     }
@@ -71,20 +86,20 @@ i {
     }
     .page {
         height:500px;
-        
+        min-width: 365px;
     }
 
     
   }
   
-  @media (max-width: 369px) {
+  @media (max-width: 414px) {
     /* … */
     .card {
-        font-size: calc(10px + 0.4vw);;
+        font-size: calc(14px + 0.4vw);;
     }
 
     h1{
-        font-size: calc(13px + 0.4vw);
+        font-size: calc(18px + 0.4vw);
     }
     .side-panel {
        margin-bottom: 25px;
